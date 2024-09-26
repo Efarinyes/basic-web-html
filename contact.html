@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h4> - Pep Fornes</h4>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="articles.html">Articles</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3><em>Contact me!!</em></h3>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="firstName">Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Your name here..." autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">Your last name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Your lastName here..." autocomplete="on" required>
+                    </p>
+                    
+                    <p>
+                        <label for="telephone">Telèfon:</label>
+                        <input type="tel" name="telephone" id="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" required>
+                    </p>
+                    
+                </fieldset>
+            <br>
+            <fieldset>
+                <legend>We send your message</legend>
+                <label for="message"> Your comment</label>
+                <br>
+                <textarea name="missatge" id="missatge" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+           all rights reserved -2025
+        </p>
+        <p>
+            <a href="index.html">Back to Home</a>
+        </p>
+    </footer>
+</body>
+</html>
